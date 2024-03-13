@@ -23,11 +23,4 @@ app.listen(4000, () => {
   console.log("Server is running on port 4000");
 });
 
-//Node
-const http = require("http");
 
-const server = http.createServer((req, res) => {
-  if (req.method === "GET" && req.url === "/") {
-    res.end("This is the home page");
-  }
-});
